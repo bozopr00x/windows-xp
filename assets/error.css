@@ -1,0 +1,96 @@
+.error-window {
+    position: fixed;
+    width: 300px;
+    background: #ECE9D8;
+    border: 1px solid #0054E9;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+    font-family: 'Tahoma', sans-serif;
+    animation: errorAppear 0.3s ease-out;
+    z-index: 9999;
+}
+
+@keyframes errorAppear {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.error-title-bar {
+    background: linear-gradient(to right, #0054E9, #2E89FF);
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: move;
+}
+
+.error-title-bar .error-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.error-close {
+    margin-left: auto;
+    background: #ECE9D8;
+    border: 1px solid #0054E9;
+    color: black;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.error-content {
+    padding: 15px;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.error-message img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.error-message p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.error-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.error-buttons button {
+    min-width: 75px;
+    padding: 3px 12px;
+    background: #ECE9D8;
+    border: 1px solid #888;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.error-buttons button:hover {
+    background: #E1DFD0;
+}
+
+.error-buttons button:active {
+    background: #D4D1C4;
+    transform: translateY(1px);
+}

@@ -1,0 +1,65 @@
+.icon.discord {
+    top: 220px;
+    left: 20px;
+}
+
+.icon.discord img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon.discord img:hover {
+    transform: scale(1.1);
+}
+
+.icon.music {
+    top: 340px;
+    left: 20px;
+}
+
+.icon.music img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    animation: spin 4s linear infinite;
+    transition: transform 0.2s;
+}
+
+.icon.music img:hover {
+    transform: scale(1.1);
+}
+
+.icon.tools {
+    top: 240px;
+    left: 20px;
+}
+
+.icon.tools img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon.tools img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon-name {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
